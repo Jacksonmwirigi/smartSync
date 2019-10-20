@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#8A9A5B</color>
+    <color name="colorPrimary">#736BED</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="purple">#332E33</color>
+
+    <color name="colorRed">#F81A1A</color>
+    <color name="colorGreen">#2EF537</color>
+    <color name="colorDialogBackground">#424144</color>
+    <color name="failed_msg_color">#5A3704</color>
+    <color name="yellow">#ffb300</color>
+    <color name="success_msg_color">#4CAF50</color>
+    <color name="lightgray">#808080</color>
+    <color name="errorColor">#B12A2A</color>
+</resources>
