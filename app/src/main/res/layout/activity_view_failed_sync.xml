@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".activities.ViewMessages">
-    <!--<include-->
-        <!--layout="@layout/toolbar_layout"-->
-        <!--android:id="@+id/toolbar"/>-->
-    <android.support.design.widget.AppBarLayout
+    tools:context=".activities.ViewFailedSMSsync">
+    <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,9 +13,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <android.support.v7.widget.Toolbar
+        <androidx.appcompat.widget.Toolbar
             xmlns:local="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/toolbar1"
+            android:id="@+id/failed_toolbar1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
@@ -29,11 +24,11 @@
             local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
-        </android.support.v7.widget.Toolbar>
-    </android.support.design.widget.AppBarLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/messages_recyclerView"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fail_messages_recyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,7 +36,7 @@
         app:layout_constraintTop_toBottomOf="@+id/appBar" />
 
     <ProgressBar
-        android:id="@+id/view_sm_progressBar"
+        android:id="@+id/view_faild_progressBar"
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -52,10 +47,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/messages_recyclerView" />
+        app:layout_constraintTop_toTopOf="@id/fail_messages_recyclerView" />
 
     <TextView
-        android:id="@+id/view_error_msg"
+        android:id="@+id/view_failed_error_msg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -67,6 +62,6 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view_sm_progressBar"/>
+        app:layout_constraintTop_toTopOf="@+id/view_faild_progressBar"/>
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<androidx.preference.PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        app:title="@string/serv_base_url">
+
+        <EditTextPreference
+            app:key="settings_server_url"
+            app:title="Server Url"
+
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/sync_header">
+        <SwitchPreferenceCompat
+            app:key="settings_sync"
+            app:summaryOff="@string/sync_off"
+            app:summaryOn="@string/sync_on"
+            app:title="@string/sync_title" />
+    </PreferenceCategory>
+</androidx.preference.PreferenceScreen>

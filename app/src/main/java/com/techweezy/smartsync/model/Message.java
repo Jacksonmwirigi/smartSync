@@ -1,7 +1,6 @@
 package com.techweezy.smartsync.model;
 
 import com.google.gson.annotations.SerializedName;
-import com.loopj.android.http.RequestParams;
 
 public class Message  {
     @SerializedName("message")
@@ -17,8 +16,8 @@ public class Message  {
 
 //    public Message() {
 //    }
-    public Message(String sender,  String message,
-                    String timestamp, String sms_id,
+    public Message(String sender, String message,
+                   String timestamp, String sms_id,
                    String sync_status ) {
         this.sender = sender;
         this.message = message;

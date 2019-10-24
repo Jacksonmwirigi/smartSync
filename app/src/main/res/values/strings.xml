@@ -14,7 +14,7 @@
     <string name="notInternetError">Your Device is not connected</string>
     <string name="enter_url_here">enter url here</string>
     <string name="disable_enable_sync">Disable/Enable Sync</string>
-    <string name="sync_off">Sync Off</string>
+    <string name="sync_off">Sync OFF</string>
     <string name="sync_on">Sync ON</string>
     <string name="failed_txt">Failed</string>
     <string name="failed_messages_txt">Failed Messages</string>
@@ -22,4 +22,20 @@
     <string name="successful_txt">Successful</string>
     <string name="retry_txt">Retrying</string>
     <string name="retry_failed">Retry</string>
+    <string name="title_activity_my_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="serv_base_url">BASE URL</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Disable/Enable Sync </string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
 </resources>

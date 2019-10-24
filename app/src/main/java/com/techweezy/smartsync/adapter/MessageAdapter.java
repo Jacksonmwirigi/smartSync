@@ -1,13 +1,15 @@
 package com.techweezy.smartsync.adapter;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.constraint.ConstraintLayout;
-import android.support.v7.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.techweezy.smartsync.R;
 import com.techweezy.smartsync.model.Message;
@@ -28,7 +30,7 @@ public class MessageAdapter extends
     @Override
     public MessageViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         View mView = LayoutInflater.from(viewGroup.getContext())
-                .inflate(R.layout.message_list,viewGroup, false);
+                .inflate(R.layout.sms_view_list,viewGroup, false);
 
         return new MessageViewHolder(mView);
     }
@@ -39,7 +41,7 @@ public class MessageAdapter extends
         messageViewHolder.MSG_SENDER.setText(messageList.get(position).getSender());
         messageViewHolder.MSG_BODY.setText(messageList.get(position).getMessage());
         messageViewHolder.TIMESTAMP.setText(messageList.get(position).getTimestamp());
-
+        messageViewHolder.MSG_STATUS.setText(messageList.get(position).getSync_status());
 
     }
 
@@ -50,7 +52,7 @@ public class MessageAdapter extends
 
     public  class MessageViewHolder extends
             RecyclerView.ViewHolder {
-        TextView MSG_BODY, MSG_SENDER, TIMESTAMP;
+        TextView MSG_BODY, MSG_SENDER, TIMESTAMP, MSG_STATUS;
         ConstraintLayout mViewLayout;
 
 
@@ -59,6 +61,7 @@ public class MessageAdapter extends
             MSG_BODY = itemView.findViewById(R.id.message_message_bodyTV);
             MSG_SENDER = itemView.findViewById(R.id.message_senderTV);
             TIMESTAMP = itemView.findViewById(R.id.message_timestampTV);
+            MSG_STATUS = itemView.findViewById(R.id.message_status_TV);
 
             mViewLayout = itemView.findViewById(R.id.message_view_layout);
         }
